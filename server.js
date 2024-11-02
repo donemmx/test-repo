@@ -3,8 +3,8 @@
 const app = require("./app");
 
 
-PORT = process.env.PORT || 3000;
-url = `http://127.0.0.1:${PORT}`;
+const PORT = process.env.PORT || 3000;
+const url = `http://127.0.0.1:${PORT}`;
 
 //const server = http.createServer(app);
 
