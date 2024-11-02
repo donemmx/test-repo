@@ -3,11 +3,10 @@
 const app = require("./app");
 
 
-const PORT = process.env.PORT || 3000;
-const url = `http://127.0.0.1:${PORT}`;
+const url = `http://127.0.0.1:${8080}`;
 
 //const server = http.createServer(app);
 
-app.listen(PORT, () => {
+app.listen(8080, () => {
     console.log(`server runing on ${url}`);
 });
