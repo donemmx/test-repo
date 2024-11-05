@@ -111,9 +111,21 @@ const loginUser = async (req, res) => {
 };
 
 
+const getHealth = async(req,res)=> {
+    try {
+        res.json({
+            status: "our server is healthy"
+        }) 
+    } catch (error) {
+        console.error('An error occurred during login:', error.message);
+        res.status(500).json({ message: error.message }); 
+    }
+}
+
 module.exports = {
     getUsers,
     getUserProfile,
     registerUser,
     loginUser,
+    getHealth
 };
