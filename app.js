@@ -43,4 +43,9 @@ app.use(cors({
 app.use('/users', userRouter);
 
 
-module.exports= app;
+
+//const server = http.createServer(app);
+
+app.listen(8080, () => {
+    console.log(`server runing on 8080`);
+});
